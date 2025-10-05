@@ -22,3 +22,17 @@ class Manager extends Employee {
 }
 
 //step 4
+let emp1 = new Employee [
+    {name:`Jonny`, department:`Pharmacy`},
+    {name:`Christian`, department:`Electricians`},
+    {name:`Sergio`, department:`Welders`},
+    {name:`Kevin`, department:`Electrician`}
+]
+
+let man1 = new Manager[
+    {name:`Freddy`, department:`Pharmacy`, teamSize:5},
+    {name:`Martin`, department:`Welders`, teamSize:8},
+    {name:`Maddie`, department:`Engineering`, teamSize:9}
+]
+
+//step 5
