@@ -19,20 +19,33 @@ class Manager extends Employee {
     describe(){
         return `${this.name} works at ${this.department} and handles ${this.teamSize} people`
     }
-}
+};
 
 //step 4
-let emp1 = new Employee [
-    {name:`Jonny`, department:`Pharmacy`},
-    {name:`Christian`, department:`Electricians`},
-    {name:`Sergio`, department:`Welders`},
-    {name:`Kevin`, department:`Electrician`}
-]
+let emp1 = [
+    new Employee(`Jonny`, `Pharmacy`),
+    new Employee(`Christian`, `Electricians`),
+    new Employee(`Sergio`, `Welders`),
+   new Employee(`Kevin`, `Electrician`)
+];
 
-let man1 = new Manager[
-    {name:`Freddy`, department:`Pharmacy`, teamSize:5},
-    {name:`Martin`, department:`Welders`, teamSize:8},
-    {name:`Maddie`, department:`Engineering`, teamSize:9}
-]
+let man1 = [
+    new Manager(`Freddy`, `Pharmacy`, 5),
+    new Manager(`Martin`, `Welders`, 8),
+    new Manager(`Maddie`, `Engineering`, 9)
+];
 
 //step 5
+class Company {
+    constructor() {
+        this.employees = []
+    }
+    addEmployee(Employee){
+        let emp2 = new Employee(name)
+        this.Employee.push(emp2)
+        return emp2
+    }
+    get listEmployees(){
+        return this.employees.length
+    }
+};
