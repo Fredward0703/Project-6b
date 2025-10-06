@@ -6,7 +6,7 @@ class Employee {
         this.department = department;
     }
     describe(){
-        return `${this.name} works in ${this.department}`
+        return `${this.name} works in the ${this.department} department`
     }
 }
 
@@ -17,7 +17,7 @@ class Manager extends Employee {
         this.teamSize = teamSize;
     }
     describe(){
-        return `${this.name} works at ${this.department} and handles ${this.teamSize} people`
+        return `${this.name} works at the ${this.department} department and handles ${this.teamSize} people`
     }
 };
 
@@ -50,7 +50,14 @@ class Company {
     }
 }
 
-// Step 5: Create a class called Company with a property employees (an array). Add methods:
-// addEmployee(employee) – adds an employee to the array
-// listEmployees() – logs each employee’s description
-// Step 6: Instantiate a Company object, add both employee and manager instances, and call listEmployees().
+//step 6:
+let myCompany = new Company();
+
+for (const employee of emp1) {
+    myCompany.addEmployee(employee)
+}
+for (const manager of man1) {
+    myCompany.addEmployee(manager)
+}
+
+myCompany.listEmployees();
