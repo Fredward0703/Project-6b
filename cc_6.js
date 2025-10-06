@@ -38,14 +38,19 @@ let man1 = [
 //step 5
 class Company {
     constructor() {
-        this.employees = []
+        this.employees = [];
     }
-    addEmployee(Employee){
-        let emp2 = new Employee(name)
-        this.Employee.push(emp2)
-        return emp2
+    addEmployee(employee){
+        this.employees.push(employee);
     }
-    get listEmployees(){
-        return this.employees.length
+    listEmployees(){
+        for (const emp of this.employees) {
+            console.log(emp.describe());
+        }
     }
-};
+}
+
+// Step 5: Create a class called Company with a property employees (an array). Add methods:
+// addEmployee(employee) – adds an employee to the array
+// listEmployees() – logs each employee’s description
+// Step 6: Instantiate a Company object, add both employee and manager instances, and call listEmployees().
